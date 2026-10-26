@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task-Conditioned Next-Fixation Prediction in Assembly Tasks</title>
+<meta name="description" content="Research project by Maria Tsiourva, Esten Ingar Grøtli, and Tor Arne Johansen. Paper and LegoFixations dataset for task-driven gaze prediction in assembly tasks.">
+<meta name="theme-color" content="#153f36">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#paper">Skip to content</a>
+<header><a class="brand" href="#top"><span class="mark" aria-hidden="true">⊙</span> Task-driven visual attention</a><nav aria-label="Main navigation"><a href="#paper">Paper</a><a href="#code">Code</a><a href="#data">Data</a></nav></header>
+<main id="top">
+<div class="hero">
+<p class="eyebrow">ISVC 2025 · Advances in Visual Computing · 2026</p>
+<h1>Task-Conditioned<br>Next-Fixation Prediction<br><span>in Assembly Tasks</span></h1>
+<p class="authors"><a href="https://github.com/maria-t">Maria Tsiourva</a><sup>1,2</sup><span>·</span> Esten Ingar Grøtli<sup>1</sup><span>·</span> Tor Arne Johansen<sup>2</sup></p>
+<p class="affiliations"><sup>1</sup> SINTEF Digital &nbsp; <sup>2</sup> Norwegian University of Science and Technology<br>Trondheim, Norway</p>
+<p class="lead">Where will we look next when building something?<br>Predicting human gaze from the scene, the object, and the recent past.</p>
+<div class="actions"><a class="button" href="https://link.springer.com/chapter/10.1007/978-3-032-14492-8_25">Read the paper <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://figshare.com/s/551fd18a1868e388a967?file=57408280">Explore the dataset <span aria-hidden="true">↗</span></a></div>
+</div>
+<section id="paper" aria-labelledby="paper-title">
+<div class="section-heading"><p class="eyebrow">01 / Research</p><h2 id="paper-title">Paper</h2></div>
+<figure><img src="assets/assembly-sequence.webp" width="1800" height="739" alt="Experimental setup and a sequence of first-person views of a participant picking up and placing building blocks. Yellow dots indicate eye fixations."><figcaption>From looking to acting. Experimental setup and a pick-and-place sequence; yellow dots mark eye fixations. Figure 1 from the paper.</figcaption></figure>
+<div class="paper-copy"><h3>Attention guided by the task</h3><p>Human gaze during assembly reflects what we are trying to do. This work models the next eye fixation as a probability distribution, conditioned on a first-person scene image, a template of the task-relevant object, and previous fixations.</p><p>We evaluate the predictions with saliency metrics, study the effects of fixation history and center bias, and introduce a task-specific hit-rate measure to assess whether predicted fixations fall on relevant objects.</p></div>
+<div class="method" aria-label="Model inputs and output"><div><b>01</b><strong>Scene</strong><span>First-person visual context</span></div><div><b>02</b><strong>Object template</strong><span>The task-relevant building block</span></div><div><b>03</b><strong>Gaze history</strong><span>Previous fixation heatmaps</span></div><div class="output"><b>→</b><strong>Next fixation</strong><span>A probability map over the scene</span></div></div>
+<details><summary>Cite this paper <span>BibTeX</span></summary><pre><code>@inproceedings{tsiourva2026task,
+  author = {Tsiourva, Maria and Grøtli, Esten Ingar and Johansen, Tor Arne},
+  title = {Task-Conditioned Next-Fixation Prediction in Assembly Tasks},
+  booktitle = {Advances in Visual Computing},
+  series = {Lecture Notes in Computer Science},
+  volume = {16396},
+  pages = {322--333},
+  year = {2026},
+  publisher = {Springer Nature Switzerland},
+  doi = {10.1007/978-3-032-14492-8_25}
+}</code></pre></details>
+<p class="publication">Published in <i>Advances in Visual Computing</i> (ISVC 2025), LNCS 16396, pp. 322–333. <a href="https://doi.org/10.1007/978-3-032-14492-8_25">Publisher record ↗</a></p>
+</section>
+<section id="code" class="code-section" aria-labelledby="code-title"><div class="section-heading"><p class="eyebrow">02 / Implementation</p><h2 id="code-title">Code</h2></div><div class="code-body"><span class="status">Not yet publicly released</span><h3>Research implementation</h3><p>The implementation is not public at this stage. This section will be updated with a repository link when the code is released.</p></div></section>
+<section id="data" aria-labelledby="data-title"><div class="section-heading"><p class="eyebrow">03 / Dataset</p><h2 id="data-title">Data</h2></div><div class="data-intro"><div><h3>LegoFixations</h3><p>A first-person vision dataset of building-block assembly, pairing scene frames with synchronized gaze coordinates, object annotations, and reference templates.</p><a class="button" href="https://figshare.com/s/551fd18a1868e388a967?file=57408280">Access on Figshare <span aria-hidden="true">↗</span></a></div><dl class="stats"><div><dt>5,375</dt><dd>Training &amp; validation scene images</dd></div><div><dt>9</dt><dd>Distinct building blocks</dd></div><div><dt>30 Hz</dt><dd>Scene video · 1600 × 1200 pixels</dd></div><div><dt>200 Hz</dt><dd>Recorded gaze sampling rate</dd></div></dl></div><p class="data-note">Recorded with the Pupil Labs Neon eye tracker. Gaze samples are matched to scene frames using the nearest timestamp. The study records one participant across multiple assembly runs. The accompanying archive is <strong>LegoFixations.zip</strong> (approximately 4.17 GB); see Figshare for access and licensing information.</p></section>
+</main><footer><p>Maria Tsiourva · Esten Ingar Grøtli · Tor Arne Johansen</p><p>Supported by the Research Council of Norway, project 342619.</p><a href="https://github.com/maria-t">GitHub profile ↗</a></footer>
+</body></html>

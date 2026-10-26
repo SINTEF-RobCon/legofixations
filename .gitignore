@@ -1,0 +1,12 @@
+# Keep this repository limited to the public website.
+.DS_Store
+__pycache__/
+node_modules/
+*.zip
+*.pth
+*.pt
+*.ipynb
+*.pdf
+.env*
+paper/
+dataset/
