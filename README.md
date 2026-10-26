@@ -9,7 +9,7 @@ This project studies task-driven human gaze during building-block assembly. The 
 
 ## Project website
 
-`https://sintef-robcon.github.io/legofixations/`
+[https://sintef-robcon.github.io/legofixations/](https://sintef-robcon.github.io/legofixations/)
 
 ## Paper
 
