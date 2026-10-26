@@ -7,6 +7,10 @@ Published in *Advances in Visual Computing* (ISVC 2025), Lecture Notes in Comput
 
 This project studies task-driven human gaze during building-block assembly. The proposed model combines first-person scene images, task-relevant object templates, and past fixation heatmaps to predict the next fixation as a probability distribution over the scene.
 
+## Project website
+
+[Visit the project website](https://maria-t.github.io/legofixations/).
+
 ## Paper
 
 [Read the paper on Springer](https://link.springer.com/chapter/10.1007/978-3-032-14492-8_25)  
